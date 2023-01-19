@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Transactional Email</title>
+
+  <!-- <link rel="stylesheet" href="source/reset.css"> -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+    @media screen and (max-width: 599.98px) {}
+
+    @media screen and (max-width: 399.98px) {}
+
+    /* Custom Dark Mode Colors */
+
+    @media (prefers-color-scheme: dark) {}
+
+    table {
+      font-family: 'Nanum Gothic', sans-serif;
+
+    }
+
+    .microsoft-logo {
+      float: left;
+    }
+
+    h1 {
+      font-weight: lighter;
+      color: #0a0a0a;
+      font-size: 40px;
+    }
+
+    h2 {
+      font-weight: 400;
+      color: #0a0a0a;
+      margin: 10px 0px 10px 0px;
+    }
+
+    h5 {
+      font-size: 15px;
+      padding-bottom: 40px;
+      color: #3f3d3d;
+    }
+
+    .order-number {
+      font-size: 16px;
+      font-weight: bold;
+      padding-bottom: 35px;
+    }
+
+    img.microsoft-home-img {
+      position: absolute;
+      width: 80px;
+      margin-right: 5px;
+    }
+
+    hr {
+      height: 1px;
+      border-width: 0;
+      color: gray;
+      background-color: gray;
+    }
+
+    ul.windows-list {
+      float: right;
+      min-width: 600px;
+      position: relative;
+      bottom: 16px;
+      right: -75px;
+    }
+
+    .order-price {
+      position: relative;
+      bottom: 36px;
+      right: 67px;
+    }
+
+    .subtotal,
+    .subtotal-amt,
+    .tax,
+    .tax-amt {
+      font-weight: 900;
+    }
+
+    .subtotal-amt,
+    .tax-amt,
+    .payment-amt {
+      position: relative;
+      bottom: 5px;
+      right: 67px;
+    }
+
+    td.total,
+    td.total-amt {
+      padding: 60px 0;
+      font-size: 50px;
+    }
+
+    td.total-amt {
+      position: relative;
+      bottom: 5px;
+      right: 185px;
+      font-weight: 400;
+    }
+
+    .payment-method {
+      color: gray;
+    }
+
+    .payment-card,
+    .payment-amt {
+      color: #494747ef;
+      font-weight: 600;
+    }
+
+    .view-btn {
+      padding: 80px 0 45px 0
+    }
+
+    button {
+      background-color: #0080C4;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    #microsoft-acc,
+    #manage-acc {
+      font-size: small;
+    }
+
+    #microsoft-acc a {
+      text-decoration: none;
+      color: #0e2b0e;
+      font-weight: 600;
+    }
+
+    #manage-acc a {
+      text-decoration: none;
+      margin-left: 380px;
+      color: #0080C4;
+      font-weight: 600;
+    }
+
+    img#woman-on-phone-img {
+      position: relative;
+      width: 200px;
+    }
+
+    span#microsoft-info {
+      float: right;
+      margin: 0 0 30px 50px;
+      position: absolute;
+
+    }
+
+    span#break-from-pw {
+      font-size: 35px;
+      color: #3d3c3c;
+      font-weight: 400;
+    }
+
+    #get-started-link a {
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #0080C4;
+    }
+
+    td.confirmation {
+      padding: 40px 0;
+    }
+
+    img.qr-code-img {
+      width: 150px;
+      background-color: white;
+      padding: 10px;
+    }
+
+    span.footer-info {
+      float: right;
+      position: relative;
+      bottom: 35px;
+      padding: 20px;
+    }
+
+    tfoot {
+      background-color: #f0eded;
+    }
+
+    .footer-data {
+      padding: 40px;
+    }
+
+    li a {
+      text-decoration: none;
+    }
+
+    .footer-info ul li {
+      font-size: 14px;
+      font-weight: 400;
+      color: #595a5aaf;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+
+<body>
+  <center style="width: 100%; table-layout: fixed; padding-bottom: 40px;">
+
+    <table class="table-one">
+      <thead>
+
+        <tr>
+          <th class="microsoft-logo">
+            <img src="img/microsoft-logo.png" alt="" width="130px" id="microsoft-logo-img">
+          </th>
+        </tr>
+
+        <tr>
+          <td>
+            <h1>
+              Hello,
+            </h1>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <h2>
+              Thank you for shopping with us on Sunday, June 2, 2019.
+            </h2>
+          </td>
+        </tr>
+
+        <tr class="any-downloads">
+          <td>
+            <h5>
+              Any downloads you bought, except preoders, are available now.
+            </h5>
+          </td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="order-number">
+            Order 2359436149
+            <hr>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span>
+              <img src="img/microsoft-home-img.png" alt="" class="microsoft-home-img">
+            </span>
+
+            <ul style="list-style: none;" class="windows-list">
+              <li>
+                Windows 10 Home
+              </li>
+              <li>
+                Quantity 1
+              </li>
+              <li>
+                <a href="#"> Install</a>
+              </li>
+              <li>
+                Product key:
+              </li>
+            </ul>
+          </td>
+
+          <td class="order-price">
+            $139.00
+          </td>
+        </tr>
+
+        <tr>
+          <td class="subtotal">
+            Subtotal
+          </td>
+          <td class="subtotal-amt">
+            $139.00
+          </td>
+        </tr>
+
+        <tr>
+          <td class="tax">
+            Tax
+          </td>
+          <td class="tax-amt">
+            $8.69
+          </td>
+        </tr>
+
+        <tr>
+          <td class="total">
+            Total
+          </td>
+          <td class="total-amt">
+            $147.69
+          </td>
+        </tr>
+
+        <tr>
+          <td class="payment-method">
+            Payment method
+          </td>
+        </tr>
+
+        <tr>
+          <td class="payment-card">
+            Visa
+          </td>
+          <td class="payment-amt">
+            $147.69
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+
+    <table>
+      <tr class="btn-row">
+        <td class="view-btn">
+          <button>
+            View or manage your order
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <span id="microsoft-acc">
+            <a href="#">
+              Microsoft account
+            </a>
+          </span>
+          <span id="manage-acc">
+            <a href="#">Manage your account
+            </a>
+          </span>
+          <hr>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <span id="woman-img">
+            <img src="img/woman-on-phone.jpg" alt="" id="woman-on-phone-img">
+          </span>
+          <span id="microsoft-info">
+            <span id="break-from-pw">
+              Break free from the
+              <br>
+              password
+              <br>
+            </span>
+            <br>
+            <span id="log-into-ms">
+              Log into Microsoft with Microsoft
+              Authenticator on your phone
+              <br>
+            </span>
+            <br>
+            <span id="get-started-link">
+              <a href="#">Get started</a>
+            </span>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="confirmation">
+          <small>
+            We recommend that you print and save this confirmation email and Terms of Sale.
+          </small>
+        </td>
+      </tr>
+      </tbody>
+
+
+      <tfoot>
+        <tr>
+          <td class="footer-data">
+            <span>
+              <img src="img/qr-code.png" alt="" class="qr-code-img">
+            </span>
+
+            <span class="footer-info">
+              <ul style="list-style: none;">
+                <li>
+                  Need to make a return? See our <a href="#">Return policy</a> to learn more.
+                </li>
+
+                <li>
+                  Microsoft respects your privacy. To learn more please read our Privacy Statement.
+                </li>
+
+                <li>
+                  Account questions? Visit <a href="#">Customer Support.</a>
+                </li>
+
+                <li>
+                  View the <a href="#">Store Terms of Sale.</a>
+                </li>
+                <br>
+
+                <li>
+                  Dates are displayed per Coordinated Universal Time. Order date may vary based on your
+                  location.
+                </li>
+                <br>
+
+                <li>
+                  Microsoft Coorporation. One Microsoft Way, Redmond, WA 98052 USA
+                </li>
+              </ul>
+            </span>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </center>
+
+  </table>
+
+</body>
+
+</html>
