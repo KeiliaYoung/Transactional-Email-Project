@@ -12,13 +12,9 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
-    @media screen and (max-width: 599.98px) {}
-
-    @media screen and (max-width: 399.98px) {}
-
     /* Custom Dark Mode Colors */
 
-    @media (prefers-color-scheme: dark) {}
+
 
     table {
       font-family: 'Nanum Gothic', sans-serif;
@@ -43,7 +39,7 @@
 
     h5 {
       font-size: 15px;
-      padding-bottom: 40px;
+      padding-bottom: 25px;
       color: #3f3d3d;
     }
 
@@ -166,7 +162,7 @@
     }
 
     span#break-from-pw {
-      font-size: 35px;
+      font-size: 20px;
       color: #3d3c3c;
       font-weight: 400;
     }
@@ -200,7 +196,7 @@
     }
 
     .footer-data {
-      padding: 40px;
+      padding: 74px 30px 0 40px;
     }
 
     li a {
@@ -213,12 +209,85 @@
       color: #595a5aaf;
       line-height: 1.5;
     }
+
+
+    /* For typical mobile devices */
+
+    @media only screen and (min-width: 280px) and (max-width: 479px) {
+      .table-one {
+        margin: 10px 0 0 15px;
+      }
+
+      td.confirmation {
+        padding: 181px 0 53px 0px
+      }
+
+      img.qr-code-img {
+        position: relative;
+        left: 20px;
+      }
+
+      span ul {
+        position: relative;
+        left: 4px;
+        bottom: 170px;
+      }
+
+    }
+
+    /* For mobile (landscape) */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      img.qr-code-img {
+        position: relative;
+        left: 20px;
+      }
+
+      span ul {
+        position: relative;
+        left: -12px;
+        bottom: 175px;
+
+      }
+
+      table {
+      
+      }
+
+
+    }
+
+    /* For tablet */
+
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      img.qr-code-img {
+        position: relative;
+        left: 20px;
+      }
+
+      span ul {
+        position: relative;
+        left: -6px;
+        bottom: 6px;
+      }
+
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: white;
+      }
+    }
+
+    /* For small desktop */
+
+    @media only screen and (min-width: 980px) and (max-width: 1023px) {}
   </style>
 </head>
 
 
 <body>
-  <center style="width: 100%; table-layout: fixed; padding-bottom: 40px;">
+  <center>
 
     <table class="table-one">
       <thead>
@@ -331,12 +400,8 @@
           </td>
         </tr>
       </tbody>
-    </table>
-  </center>
 
-  <center>
 
-    <table>
       <tr class="btn-row">
         <td class="view-btn">
           <button>
@@ -375,7 +440,7 @@
             </span>
             <br>
             <span id="log-into-ms">
-              Log into Microsoft with Microsoft
+              Log into Microsoft with Microsoft <br>
               Authenticator on your phone
               <br>
             </span>
@@ -399,12 +464,12 @@
 
       <tfoot>
         <tr>
-          <td class="footer-data">
+          <td class="footer-data" align="left" colspan="3">
             <span>
               <img src="img/qr-code.png" alt="" class="qr-code-img">
             </span>
-
             <span class="footer-info">
+
               <ul style="list-style: none;">
                 <li>
                   Need to make a return? See our <a href="#">Return policy</a> to learn more.
@@ -424,7 +489,7 @@
                 <br>
 
                 <li>
-                  Dates are displayed per Coordinated Universal Time. Order date may vary based on your
+                  Dates are displayed per Coordinated Universal Time. <br> Order date may vary based on your
                   location.
                 </li>
                 <br>
@@ -433,15 +498,16 @@
                   Microsoft Coorporation. One Microsoft Way, Redmond, WA 98052 USA
                 </li>
               </ul>
+
             </span>
           </td>
         </tr>
       </tfoot>
+
     </table>
+    </table>
+
   </center>
-
-  </table>
-
 </body>
 
 </html>
